@@ -18,11 +18,6 @@ export class ByCapitalPageComponent {
   searchByCapital(term:string):void{
     this.countriesService.searchCapital(term).subscribe((countries) =>{
       this.countries = countries;
-      console.log(this.countries);
-
     });
-
-    console.log({term});
-
   }
 }
