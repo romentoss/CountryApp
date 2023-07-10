@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
@@ -10,5 +11,8 @@ import { Component } from '@angular/core';
   ]
 })
 export class SidebarComponent {
-
+  deleteLocalStorage(){
+    localStorage.removeItem('cacheStore');
+    location.reload();
+  }
 }
